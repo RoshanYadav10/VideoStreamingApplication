@@ -1,0 +1,173 @@
+/* Center the login container and apply a background image */
+.login-container {
+  width: 100%;
+  max-width: 450px; 
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: url('../../assets/login1bg.jpg') no-repeat center center;
+  background-size: cover;
+  border: 1px solid #ddd;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease, border 0.3s ease;
+}
+
+/* Hover effect for login container */
+.login-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  padding: 42px; 
+  border: 2px solid #007bff;
+}
+
+/* Title styling */
+.login-container h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Input field styling */
+.login-container input {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Focus state for input fields */
+.login-container input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Password input container styling */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Adjust padding for password input */
+.password-container input {
+  padding-right: 40px;
+}
+
+/* Button for toggling password visibility */
+.show-password-btn {
+  position: absolute;
+  right: 14px;
+  top: 23%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.show-password-btn:hover {
+  color: #0056b3;
+}
+
+/* Button styling */
+.login-container button {
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  border: none;
+}
+
+/* Submit button styling */
+.login-container button[type='submit'] {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-container button[type='submit']:hover {
+  background-color: #0056b3;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Register button styling */
+.register-btn {
+  background-color: #28a745;
+  color: white;
+  margin-top: 20px;
+}
+
+.register-btn:hover {
+  background-color: #218838;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Forgot password button styling */
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: text-decoration 0.3s ease;
+}
+
+.forgot-password-btn:hover {
+  text-decoration: underline;
+}
+
+/* General hover effect for buttons */
+.login-container button:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add focus state for buttons */
+.login-container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .login-container input {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .login-container button {
+    font-size: 14px;
+  }
+}

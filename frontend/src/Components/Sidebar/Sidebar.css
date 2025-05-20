@@ -1,0 +1,114 @@
+/* Sidebar Container */
+.sidebar {
+    background: #fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80px; /* Account for Navbar height */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+  }
+  
+  .small-sidebar {
+    width: 80px; /* Smaller width for the sidebar */
+  }
+  
+  .small-sidebar p {
+    display: none;
+  }
+  
+  .small-sidebar hr {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+  
+  .sidebar .shortcut-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .shortcut-links .side-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .shortcut-links img {
+    width: 24px;
+    margin-right: 15px;
+  }
+  
+  .shortcut-links p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 15px 0;
+  }
+  
+  /* Subscribe Section */
+  .subscribed-list h3 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .subscribed-list .side-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .subscribed-list img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  /* Hover Effects for Links */
+  .side-link:hover p {
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 200px;
+      padding-left: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 150px;
+      padding-top: 70px; /* Adjust top padding for smaller screens */
+    }
+  
+    .small-sidebar {
+      width: 60px;
+    }
+  
+    .side-link img {
+      width: 20px;
+    }
+  
+    .side-link p {
+      display: none;
+    }
+  
+    .subscribed-list h3 {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,82 @@
+/* Container for the upload form */
+.upload-video-container {
+  width: 50%;
+  margin: 20px auto;  /* Added margin-top for spacing */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Headings */
+.upload-video-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form fields */
+.upload-video-form .form-group {
+  margin-bottom: 15px;
+}
+
+.upload-video-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.upload-video-form input,
+.upload-video-form select,
+.upload-video-form textarea {
+  width: 100%;
+  padding: 8px;  /* Adjusted padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit button */
+.upload-video-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.upload-video-form button:disabled {
+  background-color: #ccc;
+}
+
+/* Create Playlist button */
+.create-playlist-option {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.create-playlist-option button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-playlist-option button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust layout on smaller screens */
+@media (max-width: 768px) {
+  .upload-video-container {
+    width: 90%;  /* Made form more flexible for smaller screens */
+  }
+}
+
+/* Ensure enough padding at the top of the page to prevent overlap with fixed navbar */
+body {
+  padding-top: 80px; /* Adjust based on the height of your navbar */
+}

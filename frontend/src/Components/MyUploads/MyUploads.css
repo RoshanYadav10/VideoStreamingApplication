@@ -1,0 +1,114 @@
+/* Main Page Container */
+.my-uploads-page {
+  padding: 20px;
+  margin-left: 15%; /* Adjust if there's a sidebar */
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-uploads-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Video Card */
+.video-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail */
+.video-thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Video Information */
+.video-info {
+  padding: 10px;
+}
+
+.video-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #000;
+  font-weight: 500;
+}
+
+.video-stats {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Video Player Container */
+.video-player-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-player-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Loading and Empty State */
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .my-uploads-page {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .video-card {
+    padding: 10px;
+  }
+
+  .video-title {
+    font-size: 14px;
+  }
+
+  .video-stats {
+    font-size: 12px;
+  }
+
+  .video-player-container {
+    margin-top: 20px;
+  }
+}

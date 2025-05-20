@@ -1,0 +1,150 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 2%;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+/* Middle Section */
+.nav-middle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 5px 15px;
+  background-color: #f5f5f5;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-box img {
+  width: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right img {
+  width: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 15px;
+  object-fit: cover;
+}
+
+/* User Email Display */
+.user-email {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Buttons */
+.logout-btn,
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover,
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 5%;
+  }
+
+  .nav-middle .search-box {
+    max-width: 100%;
+  }
+
+  .nav-left {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-right {
+    margin-left: auto;
+  }
+
+  .menu-icon {
+    width: 22px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .search-box input {
+    font-size: 12px;
+  }
+
+  .user-email {
+    display: none; /* Optional: Hide email on small screens */
+  }
+}
